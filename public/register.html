@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="root">
+    <header class="header">
+        <img class="logo" src="logo.jpeg" alt="swiss shepherd looking back on prairie" usemap="#puppymap" style="width:200px;height:130px;"/>
+        <map name="puppymap">
+            <area shape="default" href="index.html">
+        </map>
+        <h1 class="header__title">
+            Dog<font color="#FF8C00">Lover</font>
+        </h1>
+        <!-- This is the common site name as the <h1> element -->
+            <nav >
+                <!-- Navigation menu here -->
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">
+                            <button class="menu__button" type="button">Home<i class="gg-chevron-down"></i></button>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="puppies.html">Puppies On Ground</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="litters.html">Expected Litters</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="parents.html">Parents</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">
+                            <button class="menu__button" type="button">About Us<i class="gg-chevron-down"></i></button>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="story.html">Our Story</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="breeds.html">About The Breeds</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="program.html">About our Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="register.html">
+                            <button class="menu__button" type="button">Register<i class="gg-chevron-down"></i></button>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="vip.html">VIP Area</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="benefits.html">VIP Benefits</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="faq.html">FAQ's</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    
+    <main class="register__main">
+        <h2 class="register__mainTitle">Register</h2>
+        <!-- Secondary heading matching the page title -->
+        <form class="form__form" action="/register" method="post" autocomplete="on">
+            <div class="container">
+                
+                <p class="container__p">Please fill in this form to create an account. <span class="required__label">*</span> indicates required.</p>
+                <hr>
+                <div class="container__container">
+                    <div class="form__group">
+                        <label>
+                            <span class="label__name">Title</span><span class="optional__label"> (optional)</span>
+                            <select name="title" required>
+                                <option value="" selected>Please select</option>
+                                <option value="mr">Mr</option>
+                                <option value="mrs">Mrs</option>
+                                <option value="miss">Miss</option>
+                                <option value="ms">Ms</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                        <span class="label__name">First Name (required)</span><span class="required__label">*</span>
+                        <input name="name" type="text" placeholder="Enter First Name" required/>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                        <span class="label__name">Last Name (required)</span><span class="required__label">*</span>
+                        <input name="name" type="text" placeholder="Enter Last Name" required/>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <span class="label__name">Email (required)</span><span class="required__label">*</span>
+                            <input name="email" type="email" placeholder="Enter Email" required/>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <span class="label__name">Cell Phone (required)</span><span class="required__label">*</span>
+                            <input name="cellphone" type="tel" placeholder="Enter Phone Number" required/>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                        <span class="label__name">Password (required)</span><span class="required__label">*</span>
+                        <input name="password" type="password" placeholder="Enter Password" required/>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <span class="label__name">How soon are you looking to bring home a puppy? (required)</span><span class="required__label">*</span>
+                            <select name="tier" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="1">within 1-3 months</option>
+                                <option value="2">no longer than 6 months</option>
+                                <option value="3">not exactly sure</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <label>
+                            <span class="label__name">By creating an account you agree to our <a href="privacy.html">Terms & Privacy Policy</a></span>
+                            <input name="annoy_me" type="checkbox" checked/>
+                        </label>
+                    </div>
+                    
+                </div>
+                <hr>
+                
+                <button type="submit" class="registerbtn">Register</button>
+
+            <div class="container__signin">
+                <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
+            </div>
+            </div>
+        </form>
+    </main>
+</div>
+    <footer class="footer">
+        <!-- Footer content here -->
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="privacy.html">Privacy Policy</a></li>
+            <li class="footer__item"><a class="footer__link" href="testimonials.html">Testimonials</a></li>
+            <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
